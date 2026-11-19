@@ -1,3 +1,4 @@
+#include <vector>
 #include <unordered_map>
 
 class Solution {
@@ -7,14 +8,15 @@ public:
         std::unordered_map<int,int> dists;
         int index = 0;
         for(int num:nums){
-            // try to find a match from elements already 
-            if(dists.contains(num)){
-                return std::vector<int>{dists.at(num),index};
+            // try to find a match from elements already in table
+            auto it = dists.find(num);
+            if(it!=dists.end()){
+                return {it->second,index};
             }
-            // if we didnt find a matching dista
+            // if we didnt find a match, then insert this one
             dists.try_emplace(target-num,index);
             ++index;
         }
-        return std::vector<int>{0};
+        return {};
     }
 };

@@ -6,11 +6,8 @@ public:
     bool containsDuplicate(vector<int>& nums) {
         std::unordered_set<int> seen;
         for(auto num:nums){
-            if(seen.contains(num))  
+            if(!seen.insert(num).second)  
                 return true;
-            
-            seen.insert(num);
-            
         }
         return false;
     }

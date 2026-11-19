@@ -8,12 +8,7 @@ public:
         // then check second string against that
         std::unordered_map<char,int> letters;
         for(auto c:s){
-            auto it = letters.find(c);
-            if(it==letters.end()){
-                letters.emplace(c,1);
-            }else{
-                ++it->second;
-            }
+            ++letters[c];
         }
 
         for(auto c:t){

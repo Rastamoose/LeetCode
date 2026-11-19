@@ -1,5 +1,5 @@
 #include <vector>
-#include <set>
+#include <unordered_set>
 
 class Solution {
 public:
@@ -8,8 +8,8 @@ public:
         for(auto num:nums){
             if(seen.contains(num))  
                 return true;
-            else    
-                seen.insert(num);
+            
+            seen.insert(num);
             
         }
         return false;

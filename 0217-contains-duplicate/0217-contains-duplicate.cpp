@@ -4,7 +4,7 @@
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
-        std::set<int> seen;
+        std::unordered_set<int> seen;
         for(auto num:nums){
             if(seen.contains(num))  
                 return true;

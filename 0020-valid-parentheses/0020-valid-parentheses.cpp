@@ -1,11 +1,12 @@
 #include <vector>
-#include <unordered_map>
 
 class Solution {
 public:
     bool isValid(string s) {
         std::vector<char> stack;
-        //std::unordered_map<char,char> pairs = {{'(',')'},{'{','}'},{'[',']'}};
+
+        // if odd length then can't be valid
+        if(s.size()%2==1)   return false;
 
         for(char& c:s){
             if(c=='(')
@@ -15,7 +16,7 @@ public:
             else if(c=='{')
                 stack.push_back('}');
             else{
-                if(stack.empty()) return false;
+                if(stack.empty())   return false;
                 if(c==stack.back()){
                     stack.pop_back();
                 }

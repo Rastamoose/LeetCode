@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Rastamoose/LeetCode/tree/master/0020-valid-parentheses) |
+| [0125-valid-palindrome](https://github.com/Rastamoose/LeetCode/tree/master/0125-valid-palindrome) |
 | [0242-valid-anagram](https://github.com/Rastamoose/LeetCode/tree/master/0242-valid-anagram) |
 ## Stack
 |  |
@@ -30,4 +31,8 @@ A collection of LeetCode questions to ace the coding interviews! - Created using
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/Rastamoose/LeetCode/tree/master/0020-valid-parentheses) |
+## Two Pointers
+|  |
+| ------- |
+| [0125-valid-palindrome](https://github.com/Rastamoose/LeetCode/tree/master/0125-valid-palindrome) |
 <!---LeetCode Topics End-->
